@@ -25,7 +25,7 @@ jobs:
         pip install setuptools wheel twine
     - name: install npm requirements
       run: |
-        npm install serverless -g
+        npm install serverless
     - name: Serverless deploy
       run: |
         sls deploy
