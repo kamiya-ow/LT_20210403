@@ -12,7 +12,6 @@ jobs:
   deploy:
     name: deploy
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v2
     - name: Set up Python
@@ -32,3 +31,8 @@ jobs:
       env:
         AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID  }}
         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY  }}
+
+  # ジョブを追加する場合こんな感じになる
+  # job2:
+  #   name: job2222
+  #   runs-on: ubuntu-latest
