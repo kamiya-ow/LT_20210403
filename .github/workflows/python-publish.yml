@@ -26,7 +26,6 @@ jobs:
     - name: install npm requirements
       run: |
         npm install serverless -g
-        npm ci
     - name: Serverless deploy
       run: |
         sls deploy
